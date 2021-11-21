@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+  font-family:"Josefin Sans","Arial Narrow",Arial,sans-serif;
+}
+.main_div {
+  width:100%;
+  height:100vh;
+  background: rgb(54, 172, 226);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.center_div {
+  width :25%;
+  height:80vh;
+  background-color: azure;
+  box-shadow:5px 5px 25px -5px black;
+  border-radius: 13px;
+}
+
+.listItems {
+  display: flex;
+  margin: 10px;
+}
+h1{
+  color: aliceblue;
+  background:transparent;
+  background-color: violet;
+  padding: 6px 0 2px 0;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px -5px rgb(80, 82, 83);
+  
+}
+input {
+  text-align: center;
+  height: 34px;
+  top: 10px;
+  background:transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 2px solid rgb(106, 104, 110);
+  outline: none;
+
+}
+button {
+  min-width: 45px;
+  border-radius: 4px;
+  width: 40px;
+  height: 30px;
+  /* border-radius: 50%; */
+  border-color: transparent;
+  background-color: rgb(175, 55, 175);
+  color: white;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  /* margin: 20px; */
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+
+}
+.remove {
+  position:relative;
+}
+.remove:hover{
+  background-color: red;
+}
+button:hover {
+  background-color:rgb(31, 223, 31);
+}
+ol{
+  margin-top:30px;
+}
+
+ol li{
+  padding-left: 10px;
+  text-align:left;
+  font-size:20px;
+  font-weight: 700;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: rgb(142, 79, 201);
+  text-transform: capitalize;
+}
+
+@media(max-width:768px){
+  .center_div{width: 55%;}
+}
+
+.todo_style .fa-times {
+  margin:0 15px 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  margin-left: 5px;
+  min-height :40px;
+  width :40px;
+  color: aliceblue;
+  font: size 30px;
 }
